@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
         tableView = UITableView(frame: view.frame, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(CustomCell.self, forCellReuseIdentifier: "MyTable")
+        tableView.showsVerticalScrollIndicator = false
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
