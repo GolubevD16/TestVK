@@ -9,7 +9,6 @@ import Foundation
 
 final class MainViewModel {
     var onStateChanged: ((State) -> Void)?
-    //var photosTapped: (() -> Void)?
     var services: [Service] = []
     
     private(set) var state: State = .initial {
